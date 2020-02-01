@@ -118,7 +118,7 @@ void AMagnetCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerIn
 	PlayerInputComponent->BindAction("Jump", IE_Released, this, &ACharacter::StopJumping);
 
 	// Bind fire event
-	PlayerInputComponent->BindAction("Fire", IE_Pressed, this, &AMagnetCharacter::OnFire);
+	//PlayerInputComponent->BindAction("Fire", IE_Pressed, this, &AMagnetCharacter::OnFire);
 
 	// Enable touchscreen input
 	EnableTouchscreenMovement(PlayerInputComponent);
