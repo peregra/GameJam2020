@@ -69,24 +69,24 @@ public:
 	TSubclassOf<class AMagnetProjectile> ProjectileClass;
 
 	/** Sound to play each time we fire */
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=Gameplay)
-	class USoundBase* FireSound;
+	/*UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=Gameplay)
+	class USoundBase* FireSound;*/
 
 	/** AnimMontage to play each time we fire */
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Gameplay)
-	class UAnimMontage* FireAnimation;
+	/*UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Gameplay)
+	class UAnimMontage* FireAnimation;*/
 
 	/** Whether to use motion controller location for aiming. */
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Gameplay)
-	uint32 bUsingMotionControllers : 1;
+	//UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Gameplay)
+	//uint32 bUsingMotionControllers : 1;
 
 protected:
 	
-	/** Fires a projectile. */
-	void OnFire();
+	///** Fires a projectile. */
+	//void OnFire();
 
-	/** Resets HMD orientation and position in VR. */
-	void OnResetVR();
+	///** Resets HMD orientation and position in VR. */
+	//void OnResetVR();
 
 	/** Handles moving forward/backward */
 	void MoveForward(float Val);
@@ -106,7 +106,7 @@ protected:
 	 */
 	void LookUpAtRate(float Rate);
 
-	struct TouchData
+	/*struct TouchData
 	{
 		TouchData() { bIsPressed = false;Location=FVector::ZeroVector;}
 		bool bIsPressed;
@@ -117,7 +117,7 @@ protected:
 	void BeginTouch(const ETouchIndex::Type FingerIndex, const FVector Location);
 	void EndTouch(const ETouchIndex::Type FingerIndex, const FVector Location);
 	void TouchUpdate(const ETouchIndex::Type FingerIndex, const FVector Location);
-	TouchData	TouchItem;
+	TouchData	TouchItem;*/
 	
 protected:
 	// APawn interface
@@ -130,7 +130,7 @@ protected:
 	 * @param	InputComponent	The input component pointer to bind controls to
 	 * @returns true if touch controls were enabled.
 	 */
-	bool EnableTouchscreenMovement(UInputComponent* InputComponent);
+	//bool EnableTouchscreenMovement(UInputComponent* InputComponent);
 
 public:
 	/** Returns Mesh1P subobject **/
